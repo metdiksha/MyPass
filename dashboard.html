@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPass - Your own password directory</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">MyPass</div>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Manage Passwords</h1>
+        <p>Welcome to Mypass! Your own password directory! <br>
+            Store your password hassle-free and securely. <br>Protect them from data breaches.
+        </p>
+        <h2>Passwords Directory <span id="alert">(Copied!)</span></h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+
+        </table>
+
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

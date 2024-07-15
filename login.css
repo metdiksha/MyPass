@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(41, 113, 122);
+}
+body{
+    background-color: rgb(41, 113, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.logo{
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+}
+div{
+    align-items: center;
+    
+}
+
+form{
+    padding: 23px 23px;
+    border: 2px solid black;
+}
+
