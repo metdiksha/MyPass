@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap');
 
+  
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
     
 }
 body{
     background-color: rgb(41, 113, 122);
+
+
 }
 
 nav {
-    background-color: black;
-    color: white;
+    color-scheme: normal;
     padding: 12px 3px;
     display: flex;
     justify-content: space-between;
+    background-color: black;
+    color: white;
    
 }
 
@@ -27,7 +32,6 @@ nav {
 }
 
 ul {
-    background-color: black;
     display: flex;
     margin: 0 53px;
     align-items: center;
@@ -49,67 +53,68 @@ a:link {
   }
   
   a:visited {
-    color: wheat;
+    color: white;
   }
   
   a:hover {
     color: gray;
   }
-  
-form{
+  .mid {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 80px;
+    margin: 20px 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 50px;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    display:grid;
-    width: 50%;
+    padding: 25px;
+    border-radius: 20px;
+    color: black;
+
 }
 
-table, td, tr{
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 5px 13px;
-}
- th{
-    border: 2px solid black;
-    padding: 5px 13px;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
 }
 
+.card:first-child {
+    background-color: #508C9B;
+}
+
+.card:nth-child(2) {
+    background-color: #508C9B;
+}
+/*
 .container {
-    max-width: 80vw;
-    margin: 23px auto;
+    margin: 23px 23px;
     padding: 5px 5px;
+    align-items: center;
 }
+    */
 h1, h2, h3 {
     margin: 23px 0;
 }
+.top{
+    display: block;
+    text-align: center;
 
-.btn{
-    padding: 8px 17px;
-    background: black;
-    color: white;
-    font-weight: 900;
-    border: 2px solid gray;
-    border-radius: 8px;
-    margin: 25px 0;
-    cursor: pointer;
+}
+section {
+    margin-bottom: 20px;
+
 }
 
-.btnsm{ 
-    padding: 8px 17px;
-    background: black;
-    color: white;
-    font-weight: 900;
-    border: 2px solid gray;
-    border-radius: 8px; 
-    cursor: pointer;
+section h2 {
+    margin-bottom: 10px;
+    color: #333;
 }
 
-img{
-    cursor: pointer;
-    position: relative;
-    bottom: 7px;
-    width: 15px;
-    height: 13px;
-}
-
-#alert{
-    display: none;
-}

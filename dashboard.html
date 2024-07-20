@@ -18,37 +18,39 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>Manage Passwords</h1>
+        <div class="top">
+            <h1>Manage Passwords</h1>
         <p>Welcome to Mypass! Your own password directory! <br>
+            
+
             Store your password hassle-free and securely. <br>Protect them from data breaches.
         </p>
-        <h2>Passwords Directory <span id="alert">(Copied!)</span></h2>
-        <table>
-            <tr>
-                <th>Website</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Delete</th>
-            </tr>
+        </div>
+        <div class="mid">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+                <h2><a href="addpassword.html">Add Password</a></h2>
+                <div class="direct">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
 
-        </table>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-clipboard"></i>
+                </div>
+                <h2><a href="viewpasswords.html">View Passwords</a></h2>
+                <div class="direct">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+        </div>
 
-        <h2>Add a Password</h2>
-        <form action="/submit" method="post">
-
-            <label for="website">Website:</label>
-            <input type="text" id="website" name="website" required>
-            <br><br>
-
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button class="btn" type="submit">Submit</button>
-        </form>
+                   
+    
+    </div>
+       
     </div>
     <script src="dashboard.js"></script>
 </body>
